@@ -3,23 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UnoPlatformForXamarinForms.Views.MainPage"
              Title="抽選">
-  <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="*" />
-      <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="*" />
-      <ColumnDefinition Width="*" />
-      <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-    <Label Grid.Row="0" Grid.ColumnSpan="3"
-           Text="{Binding LabelText.Value}"
-           VerticalOptions="CenterAndExpand" 
-           HorizontalOptions="CenterAndExpand"
+  <StackLayout>
+    <Label Text="{Binding LabelText.Value}"
            FontSize="Large"/>
-    <Button Grid.Row="1" Grid.Column="1"
-            Text="抽選！！！"
-            Command="{Binding LotteryCommand}"/>
-  </Grid>
+    <Button Text="抽選！！！"
+          Command="{Binding LotteryCommand}"/>
+  </StackLayout>
 </ContentPage>

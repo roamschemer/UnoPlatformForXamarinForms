@@ -17,6 +17,7 @@ namespace UnoPlatformForXamarinForms.ViewModels {
             LabelText = lottery.ObserveProperty(x => x.Name).ToReactiveProperty();
             LotteryCommand = new ReactiveCommand();
             LotteryCommand.Subscribe(_ => lottery.Action());
+            //LabelText.Value = "これがあるだけでWasmが止まる";
         }
     }
 }
