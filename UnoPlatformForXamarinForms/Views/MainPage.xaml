@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnoPlatformForXamarinForms.Views.MainPage">
+  <StackLayout>
+    <Label Text="{Binding LabelText.Value}"
+           VerticalOptions="CenterAndExpand" 
+           HorizontalOptions="CenterAndExpand"
+           FontSize="Large"/>
+    <Button Text="抽選"
+            Command="{Binding LotteryCommand}"/>
+    <Label Text="{Binding Age}"/>
+    <Button Text="年齢"
+            Command="{Binding AgeCommand}"/>
+  </StackLayout>
+</ContentPage>
