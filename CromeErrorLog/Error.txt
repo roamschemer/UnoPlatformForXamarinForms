@@ -1,0 +1,48 @@
+﻿uno-bootstrap.js:11 Setting UNO_BOOTSTRAP_MONO_RUNTIME_MODE=Interpreter
+uno-bootstrap.js:11 Setting UNO_BOOTSTRAP_MONO_PROFILED_AOT=False
+uno-bootstrap.js:11 Setting UNO_BOOTSTRAP_LINKER_ENABLED=True
+uno-bootstrap.js:11 Setting UNO_BOOTSTRAP_DEBUGGER_ENABLED=True
+uno-bootstrap.js:11 Setting UNO_BOOTSTRAP_MONO_RUNTIME_CONFIGURATION=release
+uno-bootstrap.js:11 Setting UNO_BOOTSTRAP_APP_BASE=package_a5201e04090111055c160e38cfe296be84421f9c
+dotnet.js:1 MONO_WASM: Initializing mono runtime
+dotnet.js:1 DEBUGGING ENABLED
+uno-bootstrap.js:424 Done loading the BCL
+uno-bootstrap.js:438 Loading dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/jquery-pep)
+uno-bootstrap.js:438 Loading dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/setImmediate)
+uno-bootstrap.js:438 Loading dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/Uno.UI)
+uno-bootstrap.js:438 Loading dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/AppManifest)
+uno-bootstrap.js:431 Loaded dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/AppManifest) - remains 3 other(s).
+uno-bootstrap.js:431 Loaded dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/setImmediate) - remains 2 other(s).
+uno-bootstrap.js:431 Loaded dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/jquery-pep) - remains 1 other(s).
+uno-bootstrap.js:431 Loaded dependency (./package_a5201e04090111055c160e38cfe296be84421f9c/Uno.UI) - remains 0 other(s).
+uno-bootstrap.js:512 Debugging hotkey: Shift+Alt+D (when application has focus)
+dotnet.js:1 ﻿fail: Windows.UI.Xaml.Controls.GroupStyleSelector[0]
+dotnet.js:1       The member GroupStyleSelector.GroupStyleSelector() is not implemented in Uno.
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource SystemControlBackgroundChromeBlackLowBrush
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource SystemControlBackgroundChromeBlackMediumLowBrush
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource ScrollViewerSeparatorContractDuration
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource ScrollViewerSeparatorContractBeginTime
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource ScrollViewerSeparatorExpandDuration
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource ScrollViewerSeparatorExpandBeginTime
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource ScrollViewerSeparatorExpandBeginTime
+dotnet.js:1 warn: Uno.UI.ResourceResolver[0]
+dotnet.js:1       Couldn't statically resolve resource ScrollViewerSeparatorContractBeginTime
+dotnet.js:1 The Bindable attribute is missing and the type [UnoPlatformForXamarinForms.UWP.MainPage] is not known by the MetadataProvider. Reflection was used instead of the binding engine and generated static metadata. Add the Bindable attribute to prevent this message and performance issues.
+dotnet.js:1 fail: Windows.UI.Core.CoreDispatcher[0]
+dotnet.js:1       Dispatcher unhandled exception
+dotnet.js:1 System.Exception: Failed to load Page UnoPlatformForXamarinForms.UWP.MainPage
+dotnet.js:1   at UnoPlatformForXamarinForms.UWP.App.OnNavigationFailed (System.Object sender, Windows.UI.Xaml.Navigation.NavigationFailedEventArgs e) [0x00001] in C:\Users\zunda\source\repos\UnoPlatformForXamarinForms\UnoPlatformForXamarinForms.UWP\App.xaml.cs:89 
+dotnet.js:1   at Windows.UI.Xaml.Controls.Frame.InnerNavigate (Windows.UI.Xaml.Navigation.PageStackEntry entry, Windows.UI.Xaml.Navigation.NavigationMode mode) [0x001bc] in C:\a\1\s\src\Uno.UI\UI\Xaml\Controls\Frame\Frame.cs:369 
+dotnet.js:1   at Windows.UI.Xaml.Controls.Frame.Navigate (System.Type sourcePageType, System.Object parameter, Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo infoOverride) [0x00009] in C:\a\1\s\src\Uno.UI\UI\Xaml\Controls\Frame\Frame.cs:268 
+dotnet.js:1   at Windows.UI.Xaml.Controls.Frame.Navigate (System.Type sourcePageType, System.Object parameter) [0x00000] in C:\a\1\s\src\Uno.UI\UI\Xaml\Controls\Frame\Frame.cs:263 
+dotnet.js:1   at UnoPlatformForXamarinForms.UWP.App.OnLaunched (Windows.ApplicationModel.Activation.LaunchActivatedEventArgs e) [0x0007f] in C:\Users\zunda\source\repos\UnoPlatformForXamarinForms\UnoPlatformForXamarinForms.UWP\App.xaml.cs:76 
+dotnet.js:1   at Windows.UI.Xaml.Application.Initialize () [0x0006b] in C:\a\1\s\src\Uno.UI\UI\Xaml\Application.wasm.cs:102 
+dotnet.js:1   at Windows.UI.Core.CoreDispatcher.DispatchItems () [0x0010e] in C:\a\1\s\src\Uno.UWP\UI\Core\CoreDispatcher.cs:312 
+dotnet.js:1 L: GC_MINOR: (Nursery full) time 4.93ms, stw 4.95ms promoted 1809K major size: 3040K in use: 2314K los size: 1024K in use: 78K

@@ -13,11 +13,11 @@ namespace UnoPlatformForXamarinForms.ViewModels {
         public ReactiveCommand LotteryCommand { get; }
 
         public MainPageViewModel(INavigation navigation, Lottery lottery) {
-            LabelText = new ReactiveProperty<string>();
-            LabelText = lottery.ObserveProperty(x => x.Name).ToReactiveProperty();
-            LotteryCommand = new ReactiveCommand();
-            LotteryCommand.Subscribe(_ => lottery.Action());
-            //LabelText.Value = "これがあるだけでWasmが止まる";
+            //LabelText = new ReactiveProperty<string>();
+            //LabelText = lottery.ObserveProperty(x => x.Name).ToReactiveProperty();
+            //LotteryCommand = new ReactiveCommand();
+            //LotteryCommand.Subscribe(_ => lottery.Action());
+            LabelText.Value = "これがあるだけでWasmが止まる";
         }
     }
 }
