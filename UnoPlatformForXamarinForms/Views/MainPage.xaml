@@ -5,6 +5,7 @@
              Title="抽選">
   <StackLayout>
     <Label Text="{Binding LabelText.Value}"
+           HorizontalOptions="CenterAndExpand"
            FontSize="Large"/>
     <Button Text="抽選！！！"
           Command="{Binding LotteryCommand}"/>
