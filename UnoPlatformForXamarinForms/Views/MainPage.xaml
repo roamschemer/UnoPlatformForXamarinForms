@@ -1,16 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UnoPlatformForXamarinForms.Views.MainPage">
-  <StackLayout>
-    <Label Text="{Binding LabelText.Value}"
+             x:Class="UnoPlatformForXamarinForms.Views.MainPage"
+             Title="抽選">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Label Grid.Row="0" Grid.ColumnSpan="3"
+           Text="{Binding LabelText.Value}"
            VerticalOptions="CenterAndExpand" 
            HorizontalOptions="CenterAndExpand"
            FontSize="Large"/>
-    <Button Text="抽選"
+    <Button Grid.Row="1" Grid.Column="1"
+            Text="抽選！！！"
             Command="{Binding LotteryCommand}"/>
-    <Label Text="{Binding Age}"/>
-    <Button Text="年齢"
-            Command="{Binding AgeCommand}"/>
-  </StackLayout>
+  </Grid>
 </ContentPage>
