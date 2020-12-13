@@ -3,8 +3,11 @@
   <assembly fullname="Uno.UI" />
   <assembly fullname="UnoPlatformForXamarinForms" />
 
+  <assembly fullname="ReactiveProperty" />
+  <assembly fullname="ReactiveProperty.Core" />
+
   <assembly fullname="System.Core">
-	<!-- This is required by Json.NET and any expression.Compile caller -->
-	<type fullname="System.Linq.Expressions*" />
+    <!-- This is required by Json.NET and any expression.Compile caller -->
+    <type fullname="System.Linq.Expressions*" />
   </assembly>
 </linker>
